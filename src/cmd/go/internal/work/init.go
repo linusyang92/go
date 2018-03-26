@@ -82,7 +82,7 @@ func buildModeInit() {
 			codegenArg = "-shared"
 		default:
 			switch cfg.Goos {
-			case "dragonfly", "freebsd", "linux", "netbsd", "openbsd", "solaris":
+			case "dragonfly", "freebsd", "linux", "netbsd", "openbsd", "solaris", "android":
 				// Use -shared so that the result is
 				// suitable for inclusion in a PIE or
 				// shared library.
